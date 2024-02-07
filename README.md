@@ -1,6 +1,6 @@
 # 简介
 
-在嵌入式裸机开发中，经常有任务(Task)和消息队列(Message)的管理需求，直接加入OS又太过复杂了，所以本项目提供适用于嵌入式裸机环境需要进行Task和Message功能需求的人群。
+在嵌入式裸机开发中，经常有任务(Task)和消息队列(Message)的管理需求，直接加入OS又太过复杂了，所以本项目提供适用于嵌入式裸机环境需要进行Task和Message功能需求的人群。本项目地址：[bobwenstudy/bare_task_msg (github.com)](https://github.com/bobwenstudy/bare_task_msg)
 
 项目开发过程中参考FreeRTOS的Heap管理和[osal: 这是仿照TI的OSAL重写的一个基于事件驱动的框架，主要用于适配资源比较紧张的MCU。 (gitee.com)](https://gitee.com/sqqdfny/osal)的List管理。
 
