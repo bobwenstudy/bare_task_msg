@@ -4,8 +4,8 @@
 #include "bare_task.h"
 #include "bare_list.h"
 
-#define BARE_LIST_POISON1  NULL
-#define BARE_LIST_POISON2  NULL
+#define BARE_LIST_POISON1 NULL
+#define BARE_LIST_POISON2 NULL
 
 void INIT_BARE_LIST_HEAD(struct bare_list_head *list)
 {
@@ -13,7 +13,8 @@ void INIT_BARE_LIST_HEAD(struct bare_list_head *list)
     list->prev = list;
 }
 
-static void __list_add(struct bare_list_head *new, struct bare_list_head *prev, struct bare_list_head *next)
+static void __list_add(struct bare_list_head *new, struct bare_list_head *prev,
+                       struct bare_list_head *next)
 {
     next->prev = new;
     new->next = next;

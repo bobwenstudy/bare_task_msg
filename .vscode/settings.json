@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "bare_heap.h": "c",
+        "bare_task.h": "c",
+        "bare_list.h": "c",
+        "stddef.h": "c",
+        "bare_common.h": "c"
+    }
+}

@@ -10,13 +10,11 @@
 #ifndef _BARE_TASK_H_
 #define _BARE_TASK_H_
 
-
 /** Includes -----------------------------------------------------------------*/
 #include <stdint.h>
 #include <stddef.h>
 
 #include "bare_msg.h"
-
 
 /** Define -------------------------------------------------------------------*/
 enum bare_task_hdl_result
@@ -36,14 +34,13 @@ typedef struct bare_task
     bare_task_func_t func;
 } bare_task_t;
 
-
 /** Exported functions -------------------------------------------------------*/
 
-void bare_task_send_msg(struct bare_task* task, struct bare_msg* msg);
+void bare_task_send_msg(struct bare_task *task, struct bare_msg *msg);
 
-void bare_task_delete(struct bare_task* task);
+void bare_task_delete(struct bare_task *task);
 
-void bare_task_create(struct bare_task* task);
+void bare_task_create(struct bare_task *task);
 
 void bare_task_polling(void);
 
