@@ -98,8 +98,7 @@ void *bare_heap_malloc(uint32_t xWantedSize)
     BlockLink_t *pxBlock, *pxPreviousBlock, *pxNewBlockLink;
     void *pvReturn = 0;
 
-    xWantedSize =
-            xWantedSize + HEAP_STRUCT_SIZE + (portBYTE_ALIGNMENT_MASK & ~portBYTE_ALIGNMENT_MASK);
+    xWantedSize = (xWantedSize + HEAP_STRUCT_SIZE + portBYTE_ALIGNMENT_MASK) & ~portBYTE_ALIGNMENT_MASK;
 
     if (xWantedSize <= heapstat.xFreeBytesRemaining)
     {
